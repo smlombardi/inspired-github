@@ -1,5 +1,14 @@
 # inspired-github theme
 
-A short description of your theme.
+A syntax theme based on Github's colors, inspired by the [Sublime Text theme](https://github.com/sethlopezme/InspiredGitHub.tmtheme) of the same name.
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+The UI theme in the screenshots is the excellent [Isotope theme](https://atom.io/themes/isotope-ui). Font used is Source Code Pro.
+
+###SCSS
+![image](https://raw.githubusercontent.com/smlombardi/inspired-github/master/screenshots/scss.png)
+
+###HTML
+![image](https://raw.githubusercontent.com/smlombardi/inspired-github/master/screenshots/html.png)
+
+###JS
+![image](https://raw.githubusercontent.com/smlombardi/inspired-github/master/screenshots/js.png)
