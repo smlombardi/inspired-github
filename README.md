@@ -10,4 +10,4 @@ A syntax theme based on Github's colors, inspired by the [Sublime Text theme](ht
 ![image](https://raw.githubusercontent.com/smlombardi/inspired-github/master/screenshots/js.jpg)
 
 ###SCSS
-![image](https://raw.githubusercontent.com/smlombardi/master/screenshots/scss.jpg)
+![image](https://raw.githubusercontent.com/smlombardi/inspired-github/master/screenshots/scss.jpg)
