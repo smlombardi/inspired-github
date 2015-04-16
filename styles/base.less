@@ -81,7 +81,10 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .keyword.operator {
-  color: @teal;
+  color: @burgundy;
+}
+.punctuation.terminator {
+  color: @burgundy;
 }
 
 .storage {
@@ -103,9 +106,6 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: @teal;
 }
 
-.entity.name.function {
-  color: @purple;
-}
 
 .variable.parameter {
   color: @text;
@@ -115,12 +115,17 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: @green;
 }
 
+.entity.name.function {
+  color: @purple;
+}
+
+
 .entity.other.attribute-name {
   color: @purple;
 }
 
 .support.function {
-  color: @green;
+  color: @teal;
 }
 
 .support.constant {
@@ -221,7 +226,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 
 .source.js .meta.function .entity.name.function, .source.js .entity.name.function .meta.function {
-  color: @green;
+  color: @purple;
 }
 
 .entity.name.type.new.js {
