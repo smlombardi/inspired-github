@@ -54,7 +54,8 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 
 .comment {
-  color: #b0b0b0;
+  color: #969896;
+  font-weight: 300;
 }
 
 .string, .string .constant.character.escape {
@@ -62,29 +63,54 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .constant.numeric {
-  color: @lime;
+  color: @teal;
 }
 
 .constant.language {
   color: @teal;
 }
 
-.constant.character, .constant.other {
+.constant.character, .constant.other.rgb-value {
   color: @teal;
 }
 
-.variable {
-  color: @burgundy;
+.constant.numeric.line-number.find-in-files, .constant.numeric.line-number.match.find-in-files {
+  color: #b3b3b3;
 }
+
+.entity.other.attribute-name.id.css .punctuation.definition.entity.css {}
+
+.entity.name.class {
+  color: @teal;
+}
+
+.entity.other.inherited-class {
+  color: @teal;
+}
+
+.entity.name.tag {
+  color: @green;
+}
+
+.entity.name.function {
+  color: @purple;
+}
+
+
+.entity.other.attribute-name,
+.entity.other.attribute-name .punctuation.definition.entity.scss,
+.entity.other.attribute-name.id.css,
+.entity.other.attribute-name.id.css .punctuation.definition.entity.css,
+.entity.other.attribute-name.class.css .punctuation.definition.entity.css  {
+  color: @purple;
+}
+
 
 .keyword.control {
   color: @orange;
 }
 
 .keyword.operator {
-  color: @burgundy;
-}
-.punctuation.terminator {
   color: @burgundy;
 }
 
@@ -99,32 +125,6 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   }
 }
 
-.entity.name.class {
-  color: @teal;
-}
-
-.entity.other.inherited-class {
-  color: @teal;
-}
-
-
-.variable.parameter {
-  color: @text;
-}
-
-.entity.name.tag {
-  color: @green;
-}
-
-.entity.name.function {
-  color: @purple;
-}
-
-
-.entity.other.attribute-name {
-  color: @purple;
-}
-
 .support.function {
   color: @teal;
 }
@@ -133,7 +133,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: @teal;
 }
 
-.support.type, .support.class {
+.support.type, .support.class, .meta.property-name.scss {
   color: @teal;
 }
 
@@ -155,12 +155,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: @text;
 }
 
-.constant.numeric.line-number.find-in-files, .constant.numeric.line-number.match.find-in-files {
-  color: #b3b3b3;
-}
-
-
-.source.css .punctuation.definition.entity {
+.source.css .punctuation.definition.entity, .punctuation.terminator.rule.scss {
   color: @text;
 }
 
@@ -172,34 +167,24 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: @green;
 }
 
-.source.css .constant.other.color {
-  color: @orange;
-}
-
-.source.scss .punctuation.definition.entity {
-  color: @text;
-}
 
 .source.scss .entity.other.attribute-name.pseudo-class, .source.scss .entity.other.attribute-name.pseudo-element {
   color: @burgundy;
 }
 
-.support.constant.property-value, .source.scss .support.function {
+.support.constant.property-value, .source.scss .support.function, .meta.property-value.scss {
   color: @green;
 }
 
-.source.scss .variable {
-  color: @burgundy;
-}
-
-.source.scss .variable.interpolation.scss {
+.variable, .source.scss .variable, .variable.interpolation.scss, .source.scss .meta.set.variable  {
   color: @pink;
 }
+
 .keyword.control.else.scss, .keyword.control.if.scss, .keyword.control.content.scss {
   color: @green;
 }
 .keyword.other.unit {
-  color: @dark-blue;
+  color: @burgundy;
 }
 .keyword.other.important {
   color: @red;
@@ -209,12 +194,10 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 .entity.name.tag.reference.scss {
   color: @gold;
 }
-.punctuation.definition.entity.css {
-  color: inherit;
+
+.entity.name.type.new.js {
+  color: @purple;
 }
-
-
-
 
 
 .variable.language.this.js {
@@ -225,15 +208,9 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   font-style: italic;
 }
 
-
 .source.js .meta.function .entity.name.function, .source.js .entity.name.function .meta.function {
   color: @purple;
 }
-
-.entity.name.type.new.js {
-  color: @purple;
-}
-
 
 .source.php .entity.name.type.class {
   color: @orange;
@@ -241,6 +218,10 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 .punctuation.definition.heading.markdown, .punctuation.definition.italic.markdown, .punctuation.definition.bold.markdown, .punctuation.definition.string.begin.markdown, .punctuation.definition.string.end.markdown, .punctuation.definition.metadata.markdown, .punctuation.definition.link.markdown, .punctuation.definition.blockquote.markdown, .punctuation.definition.raw.markdown {
   color: @burgundy;
+}
+
+.punctuation.section.function.scss {
+  color: @green
 }
 
 .text.html.markdown .meta.separator {
