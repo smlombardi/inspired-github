@@ -1,7 +1,7 @@
 {
   "name": "inspired-github",
   "theme": "syntax",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Syntax for Atom text editor inspired by the Sublime Text theme",
   "repository": "https://github.com/smlombardi/inspired-github",
   "license": "MIT",
