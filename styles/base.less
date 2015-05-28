@@ -55,7 +55,6 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 .comment {
   color: #bababa;
-  font-style: italic;
 }
 
 .string, .string .constant.character.escape {
@@ -196,8 +195,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: @burgundy;
 }
 .keyword.other.important {
-  color: @red;
-  font-style: italic;
+  color: #eb4535;
 }
 
 .entity.name.tag.reference.scss {
@@ -214,7 +212,6 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 .variable.parameter.function {
   color: @gold;
-  font-style: italic;
 }
 
 .source.js .meta.function .entity.name.function, .source.js .entity.name.function .meta.function {
@@ -236,6 +233,9 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 .meta.tag.template.angular {
   color: @light-blue;
+}
+.meta.tag.template.angular .punctuation.definition.block.begin.angular, .meta.tag.template.angular .punctuation.definition.block.end.angular {
+  color: @yellow;
 }
 
 
