@@ -55,7 +55,6 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 .comment {
   color: #b0b0b0;
-  font-style: italic;
 }
 
 .string, .string .constant.character.escape {
@@ -111,16 +110,16 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .punctuation.definition.tag.begin.html, .punctuation.definition.tag.end.html, .punctuation.definition.tag.html,  .meta.tag.block.any.html {
-  color: #b3b3b3
+  color: @syntax-text-color;
 }
 
 
 .keyword.control {
-  color: @orange;
+  color: @burgundy;
 }
 
 .keyword.operator {
-  color: @orange;
+  color: @purple;
 }
 
 .storage {
@@ -130,9 +129,11 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 .storage.type {
   color: @burgundy;
   &.function {
-    font-weight: bold;
+  //  font-weight: bold;
   }
 }
+
+
 
 .support.function {
   color: @teal;
@@ -208,7 +209,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 
-.variable.language.this.js {
+.variable.language.js {
   color: @orange;
 }
 .variable.parameter.function {
@@ -283,9 +284,8 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .bracket-matcher .region {
-    border: 1px solid rgba(223, 173, 54, 0.4);
-    border-radius: 3px;
-    background-color: rgba(255, 217, 0, 0.2);
+    border-bottom: 1px solid hsla(48, 100%, 47%, .8);
+    background-color: hsla(48, 100%, 60%, 0.1);
     z-index: 100;
 }
 
@@ -294,10 +294,14 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 // new angular colors
 
 .meta.tag.template.angular {
-  color: @light-blue;
+  color: @dark-blue;
 }
 .meta.tag.template.angular .punctuation.definition.block.begin.angular,
 .meta.tag.template.angular .punctuation.definition.block.end.angular,
 .meta.tag.template.angular .meta.brace.curly.js  {
   color: @burgundy;
+}
+.entity.other.attribute-name.html.angular,
+.meta.attribute.html.angular {
+  color: @purple !important;
 }
